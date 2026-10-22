@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LIFTBRAND — Demand Gen Marketing</title>
+<meta name="description" content="LIFTBRAND, agencia de Demand Gen Marketing en Estados Unidos y Costa Rica. Cobramos cuando usted vende. Bitrix24 Gold Partner y creadores de Sales Machine.">
+<meta name="theme-color" content="#261E3E">
+<meta property="og:title" content="LIFTBRAND — Demand Gen Marketing">
+<meta property="og:description" content="LIFTBRAND, agencia de Demand Gen Marketing en Estados Unidos y Costa Rica. Cobramos cuando usted vende. Bitrix24 Gold Partner y creadores de Sales Machine.">
+<link rel="preload" href="fonts/schibsted-grotesk-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/schibsted-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Google Tag Manager (same container as the current liftbrand.com) -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NHTWC7V');</script>
+<style>
+@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/schibsted-grotesk-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/schibsted-grotesk-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/schibsted-grotesk-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:800;font-display:swap;src:url(fonts/schibsted-grotesk-latin-800-normal.woff2) format("woff2")}
+/* Layout concept: a type-only first screen on a grainy plum gradient; below it, typographic set pieces on whole fields of flat colour, each on a different horizontal position. */
+:root {
+  --ground: #261E3E; --deep: #160F26; --plum: #55315E; --obs: #4A2C3F; --mauve: #94507C;
+  --violet: #775BB2; --peri: #A9B4E0; --peach: #F4A384; --blossom: #FAEFE9; --carmine: #7A5063;
+  --ink: #2A1A47; --paper: #F6EEF2; --soft: #CDBFD6; --dim: #9686AE;
+  --face: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --m: clamp(20px, 2.2vw, 32px);
+  --s-small: 14px; --s-body: clamp(16px, 0.9rem + .25vw, 18px); --s-stat: clamp(19px, 1rem + .7vw, 26px);
+  --s-head: clamp(36px, 1.4rem + 3.2vw, 64px); --s-disp: clamp(40px, 0.5rem + 8.6vw, 136px);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1); --ease-io: cubic-bezier(0.77, 0, 0.175, 1);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--ground); color: var(--paper); font-family: var(--face); font-size: var(--s-body); line-height: 1.5; letter-spacing: -0.01em; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+h1, h2, h3, p, ul, dl, dd, figure { margin: 0; padding: 0; }
+ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
+img { display: block; max-width: 100%; height: auto; }
+:focus-visible { outline: 2px solid var(--peach); outline-offset: 3px; }
+::selection { background: var(--peach); color: var(--ink); }
+.wrap { padding-left: max(var(--m), env(safe-area-inset-left, 0px)); padding-right: max(var(--m), env(safe-area-inset-right, 0px)); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; left: 16px; top: -60px; background: var(--peach); color: var(--ink); padding: 10px 16px; border-radius: 999px; z-index: 20; }
+.skip:focus { top: 16px; }
+.h2 { font-size: var(--s-head); font-weight: 600; line-height: 1; letter-spacing: -0.04em; text-wrap: balance; }
+.body { max-width: 34em; }
+.ink { color: var(--ink); }
+
+/* Pill button: the one button shape on the page */
+.pill { display: inline-flex; align-items: center; justify-content: center; gap: 12px; background: var(--peach); color: var(--ink); font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 999px; transition: transform 160ms var(--ease-out), background-color 200ms ease; }
+.pill svg { transition: transform 200ms var(--ease-out); }
+.pill:active { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) { .pill:hover { background: var(--paper); } .pill:hover svg { transform: translateX(3px); } }
+
+/* HERO */
+.hero { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr auto; min-height: clamp(640px, 100svh, 960px); padding-block: var(--m) 24px; isolation: isolate; overflow: hidden;
+  background:
+    radial-gradient(45% 45% at 98% 2%, rgb(22 15 38 / .7), transparent 70%), /* taste-skill-ignore: brand gradient hero / slip mask / dot leader */
+    radial-gradient(32% 42% at 90% 58%, rgb(169 180 224 / .42), transparent 70%), /* taste-skill-ignore: brand gradient hero / slip mask / dot leader */
+    radial-gradient(55% 65% at 8% 95%, rgb(119 91 178 / .95), transparent 70%), /* taste-skill-ignore: brand gradient hero / slip mask / dot leader */
+    linear-gradient(135deg, #AA5E8D 0%, #55315E 55%, #2A1A47 100%); } /* taste-skill-ignore: brand gradient hero / slip mask / dot leader */
+.hero::after { content: ""; position: absolute; inset: 0; background: var(--grain); opacity: .14; mix-blend-mode: overlay; pointer-events: none; z-index: -1; }
+.hero-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+.hero-lead { display: grid; gap: 20px; justify-items: start; max-width: 25em; }
+.lead { font-size: 18px; line-height: 1.4; text-wrap: pretty; }
+.nav { display: flex; align-items: center; gap: 28px; }
+.nav ul { display: flex; gap: 28px; }
+.nav a, .lang { font-size: 16px; font-weight: 500; }
+.nav a { position: relative; }
+.nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 220ms var(--ease-out); }
+@media (hover: hover) and (pointer: fine) { .nav a:hover::after { transform: scaleX(1); } }
+.lang { color: var(--peach); font-weight: 600; }
+.menu-btn { display: none; font-size: 16px; font-weight: 600; }
+.wordmark { min-width: 0; align-self: center; margin-top: 20px; padding-inline: max(var(--m), env(safe-area-inset-left, 0px)) max(var(--m), env(safe-area-inset-right, 0px)); font-weight: 800; font-size: 16.6vw; line-height: .88; letter-spacing: -0.05em; white-space: nowrap; text-align: left; transform-origin: 50% 50%; }
+.hero-foot { display: flex; justify-content: space-between; gap: 16px; color: var(--soft); font-size: 16px; }
+
+/* ABOUT */
+.about { background: var(--blossom); color: var(--ink); padding-block: clamp(80px, 11vw, 160px); display: grid; gap: clamp(64px, 8vw, 120px); }
+.grid-34 { display: grid; grid-template-columns: minmax(0, calc(34vw - var(--m))) minmax(0, 806px); }
+.facts { display: grid; gap: 20px; align-content: start; }
+.facts dt { font-size: var(--s-small); color: var(--carmine); }
+.facts dd { font-weight: 500; font-size: 16px; line-height: 1.35; max-width: 17em; }
+.facts a { text-decoration: underline; text-underline-offset: 3px; }
+.statement { font-size: var(--s-stat); line-height: 1.38; letter-spacing: -0.015em; max-width: 31em; text-wrap: pretty; }
+.label { font-size: 16px; font-weight: 600; }
+.svc { columns: 2; column-gap: 64px; }
+.svc li { break-inside: avoid; padding-bottom: 22px; }
+.svc b { display: block; font-weight: 600; font-size: 18px; }
+.svc span { font-size: var(--s-small); color: var(--carmine); }
+
+/* Photos: one treatment, grayscale with a plum multiply */
+.photo { background: var(--plum); position: relative; overflow: hidden; }
+.photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+.photo::after { content: ""; position: absolute; inset: 0; background-color: var(--plum); mix-blend-mode: multiply; opacity: .55; pointer-events: none; }
+.band { height: clamp(360px, 62vw, 820px); }
+.band img { transform-origin: 50% 40%; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; height: clamp(320px, 52vw, 760px); }
+.pair figure { position: relative; overflow: hidden; height: 100%; }
+.portrait { aspect-ratio: 4 / 5; margin-top: 16px; max-width: 420px; }
+
+/* FIELDS: statements on colour fields */
+.field { position: relative; min-height: clamp(520px, 76svh, 760px); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: auto 1fr auto; padding: clamp(28px, 4vw, 56px) max(var(--m), env(safe-area-inset-right, 0px)) clamp(24px, 2.2vw, 32px) max(var(--m), env(safe-area-inset-left, 0px)); column-gap: 16px; }
+.f1 { background: var(--plum); } .f2 { background: var(--mauve); } .f3 { background: var(--violet); }
+.expl { grid-column: 8 / span 4; grid-row: 1; max-width: 21em; font-size: 18px; line-height: 1.5; }
+.mirror .expl { grid-column: 2 / span 4; }
+.phrase { grid-column: 1 / -1; grid-row: 3; font-weight: 800; font-size: var(--s-disp); line-height: .9; letter-spacing: -0.05em; text-wrap: balance; }
+.mirror .phrase { justify-self: end; text-align: right; }
+
+/* METHOD: the itinerary slip */
+.method { background: var(--ground); padding-block: clamp(80px, 11vw, 160px); }
+.method-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 16px; align-items: start; }
+.method-intro { grid-column: 1 / span 5; display: grid; gap: 24px; }
+.slip { grid-column: 7 / span 5; max-width: 480px; background: var(--blossom); color: var(--ink); padding: 36px 32px 56px; font-variant-numeric: tabular-nums;
+  -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 20px 100%; mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 20px 100%; } /* taste-skill-ignore: brand gradient hero / slip mask / dot leader */
+.slip h3 { font-size: 16px; font-weight: 700; margin: 28px 0 12px; }
+.slip h3:first-child { margin-top: 0; }
+.slip li { display: flex; align-items: baseline; gap: 10px; font-size: 16px; padding: 4px 0; }
+.slip li .l { font-weight: 500; }
+.slip li .dots { flex: 1; min-width: 16px; height: 4px; background: radial-gradient(circle, var(--carmine) 1.5px, transparent 2px) 0 50% / 9px 4px repeat-x; opacity: .7; transform: translateY(-2px); } /* taste-skill-ignore: brand gradient hero / slip mask / dot leader */
+.slip li .r { color: var(--carmine); text-align: right; }
+.slip .fin { margin-top: 28px; display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 44px; padding: 0 14px; background: var(--ink); color: var(--blossom); font-weight: 600; font-size: 16px; }
+.slip .fin span:last-child { color: var(--peach); font-weight: 400; white-space: nowrap; }
+
+/* PROOF */
+.proof { background: var(--deep); padding-block: clamp(96px, 11vw, 160px); }
+.proof-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 16px; align-items: start; }
+.proof .h2 { grid-column: 1 / span 4; }
+.names { grid-column: 6 / -1; display: grid; gap: .1em; font-weight: 500; font-size: var(--s-head); line-height: 1.05; letter-spacing: -0.04em; }
+.names .nm { color: var(--dim); transition: color 400ms ease; }
+.names .nm.on { color: var(--paper); }
+
+/* CHECK: the live thing */
+.check { background: var(--blossom); color: var(--ink); padding-block: clamp(80px, 10vw, 140px); }
+.check-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 16px; align-items: start; }
+.check-intro { grid-column: 1 / span 4; display: grid; gap: 20px; }
+.check-list { grid-column: 6 / -1; display: grid; gap: 8px; }
+.check-list ul { display: grid; gap: 8px; }
+.q { display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #F2E3DC; padding: 18px 20px; border-radius: 20px; }
+.q p { font-size: 18px; line-height: 1.35; min-width: 0; }
+.seg { display: flex; flex: none; background: var(--blossom); border-radius: 999px; padding: 4px; }
+.seg button { font-size: 16px; font-weight: 600; padding: 9px 16px; border-radius: 999px; color: var(--carmine); transition: background-color 180ms ease, color 180ms ease, transform 160ms var(--ease-out); }
+.seg button:active { transform: scale(0.95); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--blossom); }
+.result { padding: 24px 20px 0; }
+.score { font-weight: 800; font-size: var(--s-stat); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; margin-right: .3em; }
+.verdict { font-size: 18px; max-width: 34em; }
+.verdict a { text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+
+/* CTA band: the whole band is the link */
+.cta-band { position: relative; display: block; background: var(--peach); color: var(--ink); min-height: clamp(380px, 60svh, 580px); padding: var(--m) max(var(--m), env(safe-area-inset-right, 0px)) 0 max(var(--m), env(safe-area-inset-left, 0px)); overflow: hidden; }
+.cta-s { display: block; max-width: 21em; font-size: 18px; font-weight: 500; line-height: 1.35; }
+.cta-arrow { position: absolute; top: var(--m); right: max(var(--m), env(safe-area-inset-right, 0px)); width: 48px; height: 48px; transition: transform 240ms var(--ease-out); }
+.cta-word { position: absolute; left: max(var(--m), env(safe-area-inset-left, 0px)); bottom: -0.1em; font-weight: 800; font-size: 24vw; line-height: 1; letter-spacing: -0.06em; white-space: nowrap; }
+@media (hover: hover) and (pointer: fine) { .cta-band:hover { background: var(--ink); color: var(--peach); } .cta-band:hover .cta-arrow { transform: translate(4px, -4px); } }
+
+/* CONTACT: address in display rows */
+.rows .row { background: var(--plum); }
+.rows .row:nth-child(even) { background: var(--obs); }
+.rows .wrap { display: flex; align-items: flex-end; gap: .4em; width: 100%; min-height: 150px; padding-bottom: 26px; font-size: clamp(30px, 1rem + 4.2vw, 64px); line-height: 1; letter-spacing: -0.035em; text-align: left; }
+.rows .k { color: var(--soft); }
+.rows a.wrap { transition: color 200ms ease; }
+@media (hover: hover) and (pointer: fine) { .rows a.wrap:hover { color: var(--peach); } }
+.mail { user-select: all; overflow-wrap: anywhere; }
+.greet { background: var(--ground) !important; }
+.greet .wrap { align-items: center; padding-bottom: 0; gap: 24px; }
+.round { display: inline-grid; place-items: center; width: 88px; height: 88px; border-radius: 50%; background: var(--peach); color: var(--ink); flex: none; transition: transform 200ms var(--ease-out); }
+.round svg { width: 32px; height: 32px; }
+.greet button:active .round { transform: scale(0.95); }
+@media (hover: hover) and (pointer: fine) { .greet button:hover .round { transform: translateX(6px); } }
+
+/* FOOTER: inverted, wordmark returns */
+.foot { background: var(--blossom); color: var(--ink); padding-block: 48px 28px; display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(120px, 15vw, 220px); overflow-x: clip; }
+.cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; font-size: 16px; }
+.cols > div > * { overflow-wrap: anywhere; }
+.cols > div { display: grid; gap: 6px; align-content: start; }
+.cols a, .cols p:not(.ft-h) { color: var(--carmine); }
+.cols a:hover { color: var(--ink); }
+.ft-h { font-weight: 600; }
+.foot-word { min-width: 0; font-weight: 800; font-size: 16.6vw; line-height: .85; letter-spacing: -0.05em; white-space: nowrap; }
+.legal { margin-top: 16px; font-size: 14px; color: var(--carmine); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+
+/* FORM DIALOG */
+.form-dlg { width: min(560px, calc(100vw - 32px)); max-height: calc(100svh - 32px); border: 0; border-radius: 24px; padding: 28px; background: var(--blossom); color: var(--ink); opacity: 1; transform: none; transition: opacity 220ms var(--ease-out), transform 220ms var(--ease-out), display 220ms allow-discrete, overlay 220ms allow-discrete; }
+.form-dlg[open] { @starting-style { opacity: 0; transform: scale(0.96) translateY(8px); } }
+.form-dlg::backdrop { background: rgb(22 15 38 / .6); }
+.dlg-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 20px; }
+.dlg-head h2 { font-size: 28px; font-weight: 600; letter-spacing: -0.03em; }
+.x { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: #F2E3DC; transition: transform 160ms var(--ease-out); }
+.x:active { transform: scale(0.94); }
+.x svg { width: 20px; height: 20px; }
+.b24 { min-height: 120px; }
+.fallback { font-size: 14px; color: var(--carmine); margin-top: 16px; }
+
+/* MOTION: entrances, staggered; content stays visible without script */
+.js .pre { opacity: 0; transform: translateY(24px); }
+.js .rv { transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out); transition-delay: calc(var(--i, 0) * 75ms); }
+@supports (animation-timeline: view()) {
+  .hero .wordmark { animation: settle linear both; animation-timeline: view(); animation-range: exit 0% exit 100%; }
+  .foot-word { animation: arrive linear both; animation-timeline: view(); animation-range: entry 0% cover 40%; }
+  .band img { animation: drift linear both; animation-timeline: view(); }
+  @keyframes settle { to { transform: scale(0.93); opacity: .6; } }
+  @keyframes arrive { from { transform: scale(0.94); } to { transform: scale(1); } }
+  @keyframes drift { from { transform: scale(1.12) translateY(-3%); } to { transform: scale(1) translateY(3%); } }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .pre { transform: none; }
+  .js .rv { transition: opacity 300ms ease; }
+  .hero .wordmark, .foot-word, .band img { animation: none !important; }
+  .form-dlg { transform: none !important; }
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+  .grid-34 { grid-template-columns: 1fr; gap: 40px; }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .method-intro, .slip { grid-column: 1 / -1; }
+  .slip { margin-top: 48px; }
+  .check-intro, .check-list { grid-column: 1 / -1; }
+  .proof .h2, .names { grid-column: 1 / -1; }
+  .names { margin-top: 32px; }
+  .check-list { margin-top: 40px; }
+  .expl { grid-column: 1 / span 8; }
+  .field { min-height: 480px; }
+  .mirror .expl { grid-column: 5 / -1; }
+}
+
+/* HERO switches to its phone composition below 900px */
+@media (max-width: 900px) {
+  .hero { min-height: 760px; grid-template-rows: auto auto auto 1fr auto; padding-top: 20px; }
+  .hero-top { display: contents; }
+  .nav { grid-row: 1; justify-content: space-between; gap: 16px; padding-inline: max(var(--m), env(safe-area-inset-left, 0px)) max(var(--m), env(safe-area-inset-right, 0px)); }
+  .menu-btn { display: inline-block; order: 2; }
+  .lang { order: 1; margin-right: auto; }
+  .nav ul { display: none; position: absolute; left: 0; right: 0; top: 56px; z-index: 5; flex-direction: column; gap: 0; background: var(--deep); padding: 8px max(var(--m), env(safe-area-inset-left, 0px)) 16px; }
+  .nav ul.open { display: flex; }
+  .nav ul a { display: block; font-size: 22px; padding: 12px 0; }
+  .wordmark { grid-row: 2; margin-top: 18vh; font-size: 21.6vw; }
+  .hero-lead { grid-row: 3; max-width: none; padding: 24px max(var(--m), env(safe-area-inset-right, 0px)) 0 max(var(--m), env(safe-area-inset-left, 0px)); gap: 24px; justify-items: stretch; }
+  .lead { font-size: 18px; }
+  .hero-foot { grid-row: 5; font-size: 14px; align-items: end; }
+  .hero-foot p:last-child { text-align: right; max-width: 12em; }
+}
+
+/* PHONE */
+@media (max-width: 640px) {
+  .hero { min-height: 760px; grid-template-rows: auto auto auto 1fr auto; padding-top: 20px; }
+  .hero-top { display: contents; }
+  .nav { grid-row: 1; justify-content: space-between; gap: 16px; padding-inline: max(var(--m), env(safe-area-inset-left, 0px)) max(var(--m), env(safe-area-inset-right, 0px)); }
+  .menu-btn { display: inline-block; order: 2; }
+  .lang { order: 1; margin-right: auto; }
+  .nav ul { display: none; position: absolute; left: 0; right: 0; top: 56px; z-index: 5; flex-direction: column; gap: 0; background: var(--deep); padding: 8px max(var(--m), env(safe-area-inset-left, 0px)) 16px; }
+  .nav ul.open { display: flex; }
+  .nav ul a { display: block; font-size: 22px; padding: 12px 0; }
+  .wordmark { grid-row: 2; margin-top: 18vh; font-size: 21.6vw; }
+  .hero-lead { grid-row: 3; max-width: none; padding: 24px max(var(--m), env(safe-area-inset-right, 0px)) 0 max(var(--m), env(safe-area-inset-left, 0px)); gap: 24px; justify-items: stretch; }
+  .lead { font-size: 18px; }
+  .hero-foot { grid-row: 5; font-size: 14px; align-items: end; }
+  .hero-foot p:last-child { text-align: right; max-width: 12em; }
+  .facts { gap: 20px 16px; }
+  .facts dd { font-size: 15px; }
+  .svc { columns: 1; }
+  .field { min-height: 540px; display: flex; flex-direction: column; justify-content: space-between; gap: 48px; }
+  .expl, .mirror .expl { max-width: 19em; font-size: 16px; }
+  .mirror .phrase { text-align: left; justify-self: start; }
+  .phrase { font-size: 10vw; }
+  .pair { height: 420px; }
+  .slip { padding: 28px 22px 48px; }
+  .q { flex-direction: column; align-items: flex-start; gap: 14px; padding: 16px; }
+  .q p { font-size: 16px; }
+  .cta-band { min-height: 400px; }
+  .cta-s { font-size: 17px; max-width: 15em; }
+  .cta-arrow { width: 32px; height: 32px; }
+  .rows .wrap { min-height: 84px; padding-bottom: 14px; font-size: 6.4vw; white-space: nowrap; }
+  .rows .mail { font-size: clamp(20px, 7.2vw, 34px); }
+  .greet { background: var(--peach) !important; }
+  .greet .wrap { color: var(--ink); justify-content: space-between; min-height: 96px; }
+  .round { width: 56px; height: 56px; background: var(--ink); color: var(--peach); }
+  .round svg { width: 24px; height: 24px; }
+  .cols { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 32px; }
+  .cols > div:last-child { grid-column: 1 / -1; }
+  .foot { gap: 96px; }
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHTWC7V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+<header class="hero" id="top">
+  <div class="hero-top wrap">
+    <div class="hero-lead">
+      <p class="lead" data-i18n="hero">Demand Gen Marketing para marcas que quieren compradores listos para comprar.</p>
+      <button class="pill" type="button" data-open-form><span data-i18n="cta">Evalúe su marca</span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="Principal">
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navlist" data-i18n="menu">Menú</button>
+      <ul id="navlist">
+        <li><a href="#servicios" data-i18n="n1">Servicios</a></li>
+        <li><a href="#metodo" data-i18n="n2">Método</a></li>
+        <li><a href="#clientes" data-i18n="n3">Clientes</a></li>
+        <li><a href="#contacto" data-i18n="n4">Contacto</a></li>
+      </ul>
+      <button class="lang" type="button" data-lang-toggle aria-label="Switch to English">EN</button>
+    </nav>
+  </div>
+  <h1 class="wordmark" aria-label="LIFTBRAND, Demand Gen Marketing"><span aria-hidden="true">LIFTBRAND</span></h1>
+  <div class="hero-foot wrap">
+    <p data-i18n="bl">USA · Costa Rica</p>
+    <p data-i18n="br">Bitrix24 Gold Partner · Creadores de Sales Machine</p>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="about" id="nosotros" aria-labelledby="about-h">
+  <div class="wrap grid-34">
+    <h2 class="sr-only" id="about-h" data-i18n="aboutH">Quiénes somos</h2>
+    <dl class="facts" data-reveal>
+      <div><dt data-i18n="f1k">Oficinas</dt><dd data-i18n="f1v">Estados Unidos y Costa Rica</dd></div>
+      <div><dt data-i18n="f2k">Modelo</dt><dd data-i18n="f2v">Compensación ligada a resultados</dd></div>
+      <div><dt data-i18n="f3k">Partner</dt><dd>Bitrix24 Gold Partner</dd></div>
+      <div><dt data-i18n="f4k">Producto</dt><dd><a href="https://beasalesmachine.com" target="_blank" rel="noopener">Sales Machine</a></dd></div>
+    </dl>
+    <p class="statement" data-reveal data-i18n="about">Creemos en la palabra y la lealtad. Conocemos los negocios porque somos parte de ellos, y por eso trabajamos como la mano derecha de cada marca: hacemos crecer su valor, protegemos su rentabilidad y hacemos más con menos.</p>
+  </div>
+  <div class="wrap grid-34 services" id="servicios">
+    <h2 class="label" data-reveal data-i18n="svcH">Servicios</h2>
+    <ul class="svc" data-reveal data-svc></ul>
+  </div>
+</section>
+
+<figure class="band photo" aria-hidden="true">
+  <img src="https://picsum.photos/id/315/2400/1400?grayscale" width="2400" height="1400" alt="" loading="lazy">
+</figure>
+
+<section class="field f1" aria-labelledby="fh1">
+  <p class="expl" data-reveal data-i18n="fp1">Parte de nuestra compensación es variable y depende de lo que su marca vende. No perseguimos premios de publicidad: perseguimos sus números, con un equipo que trabaja con KPIs.</p>
+  <h2 id="fh1" class="phrase" data-reveal data-i18n="fh1">Cobramos cuando usted vende.</h2>
+</section>
+<section class="field f2 mirror" aria-labelledby="fh2">
+  <p class="expl" data-reveal data-i18n="fp2">Atendemos marcas de cualquier tamaño con servicio boutique: un equipo multidisciplinario que fija metas con usted, entiende su producto y construye sobre sus fortalezas.</p>
+  <h2 id="fh2" class="phrase" data-reveal data-i18n="fh2">Su mano derecha.</h2>
+</section>
+<section class="field f3" aria-labelledby="fh3">
+  <p class="expl" data-reveal data-i18n="fp3">Somos Bitrix24 Gold Partner. Implementamos y operamos el CRM que sigue cada oportunidad de negocio, para que marketing y ventas trabajen sobre la misma verdad.</p>
+  <h2 id="fh3" class="phrase" data-reveal data-i18n="fh3">Un solo CRM.</h2>
+</section>
+
+<div class="pair photo" aria-hidden="true">
+  <figure><img src="https://picsum.photos/id/893/1400/1600?grayscale" width="1400" height="1600" alt="" loading="lazy"></figure>
+  <figure><img src="https://picsum.photos/id/743/1400/1600?grayscale" width="1400" height="1600" alt="" loading="lazy"></figure>
+</div>
+
+<section class="method" id="metodo" aria-labelledby="mh">
+  <div class="wrap method-grid">
+    <div class="method-intro">
+      <h2 id="mh" class="h2" data-reveal data-i18n="mh">Así trabajamos.</h2>
+      <p class="body" data-reveal data-i18n="mp">Primero el proceso, después el talento. Nuestro método tiene cinco pilares y se ajusta trimestre a trimestre, para reaccionar a tiempo y corregir a favor de su marca.</p>
+      <figure class="portrait photo" data-reveal aria-hidden="true"><img src="https://picsum.photos/id/1081/960/1200?grayscale" width="960" height="1200" alt="" loading="lazy"></figure>
+    </div>
+    <div class="slip" data-reveal data-slip></div>
+  </div>
+</section>
+
+<section class="proof" id="clientes" aria-labelledby="ph">
+  <div class="wrap proof-grid">
+    <h2 id="ph" class="h2" data-reveal data-i18n="pH">Confían en nosotros.</h2>
+    <ul class="names" data-reveal data-proof>
+      <li class="nm">Economy Rent a Car</li><li class="nm on">MedforLess</li><li class="nm">Flamingo Cars</li><li class="nm">NIZA Air</li>
+    </ul>
+  </div>
+</section>
+
+<section class="check" aria-labelledby="ch">
+  <div class="wrap check-grid">
+    <div class="check-intro">
+      <h2 id="ch" class="h2 ink" data-reveal data-i18n="chH">¿Su marca está lista?</h2>
+      <p class="body ink" data-reveal data-i18n="chP">Cuatro preguntas que hacemos antes de cualquier propuesta. Responda con honestidad.</p>
+    </div>
+    <div class="check-list" data-reveal>
+      <ul data-questions></ul>
+      <div class="result" aria-live="polite">
+        <p class="verdict"><strong class="score" data-score>0 / 4</strong> <span data-verdict>Responda las cuatro y le decimos por dónde empezar.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="cta-band" href="#contacto" data-open-form>
+  <span class="cta-s" data-i18n="ctaS">Cuéntenos de su marca. Le respondemos en menos de un día hábil.</span>
+  <svg class="cta-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M5 19L19 5M8 5h11v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="cta-word"><span data-i18n="word">Hablemos</span></span>
+</a>
+
+<section class="contact" id="contacto" aria-labelledby="coh">
+  <h2 class="sr-only" id="coh" data-i18n="coH">Contacto</h2>
+  <ul class="rows">
+    <li class="row"><span class="wrap">LIFTBRAND</span></li>
+    <li class="row"><a class="wrap" href="tel:+13073330136"><span class="k">USA</span> +1 307 333 0136</a></li>
+    <li class="row"><a class="wrap" href="tel:+50622150304"><span class="k">Costa Rica</span> +506 2215 0304</a></li>
+    <li class="row"><span class="wrap mail">mercadeo@liftbrand.com</span></li>
+    <li class="row greet"><button class="wrap" type="button" data-open-form><span data-i18n="greet">Escríbanos</span><span class="round" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap cols">
+    <div><p class="ft-h" data-i18n="c1">Oficinas</p><p data-i18n="c1a">Estados Unidos</p><p>Costa Rica</p></div>
+    <div><p class="ft-h" data-i18n="c2">Navegación</p><a href="#servicios" data-i18n="n1">Servicios</a><a href="#metodo" data-i18n="n2">Método</a><a href="#clientes" data-i18n="n3">Clientes</a><a href="#contacto" data-i18n="n4">Contacto</a></div>
+    <div><p class="ft-h" data-i18n="c3">Producto</p><a href="https://beasalesmachine.com" target="_blank" rel="noopener">Sales Machine</a><p>beasalesmachine.com</p></div>
+    <div><p class="ft-h" data-i18n="c4">Contacto</p><a href="tel:+13073330136">+1 307 333 0136</a><a href="tel:+50622150304">+506 2215 0304</a><p>mercadeo@liftbrand.com</p></div>
+  </div>
+  <div class="wrap">
+    <p class="foot-word" aria-hidden="true"><span>LIFTBRAND</span></p>
+    <p class="legal"><span data-i18n="legal">© 2026 LIFTBRAND. Todos los derechos reservados.</span> <span data-i18n="credit">Fotografías de referencia: Unsplash vía Lorem Picsum.</span></p>
+  </div>
+</footer>
+
+<dialog class="form-dlg" id="form-dlg" aria-labelledby="fdh">
+  <div class="dlg-head">
+    <h2 id="fdh" data-i18n="fdh">Hablemos de su marca</h2>
+    <button class="x" type="button" data-close-form aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="b24" id="b24-slot"></div>
+  <p class="fallback" data-i18n="fallback">Si el formulario no carga, escríbanos a mercadeo@liftbrand.com o llámenos al +506 2215 0304.</p>
+</dialog>
+
+<script>
+(function () {
+  var B24 = { form: "inline/62/3b9ykt", loader: "https://cdn.bitrix24.com/b2106123/crm/form/loader_62.js" };
+
+  var T = {
+    es: {
+      skip: "Saltar al contenido", hero: "Demand Gen Marketing para marcas que quieren compradores listos para comprar.", cta: "Evalúe su marca", menu: "Menú",
+      n1: "Servicios", n2: "Método", n3: "Clientes", n4: "Contacto", bl: "USA · Costa Rica", br: "Bitrix24 Gold Partner · Creadores de Sales Machine",
+      aboutH: "Quiénes somos", f1k: "Oficinas", f1v: "Estados Unidos y Costa Rica", f2k: "Modelo", f2v: "Compensación ligada a resultados", f3k: "Partner", f4k: "Producto",
+      about: "Creemos en la palabra y la lealtad. Conocemos los negocios porque somos parte de ellos, y por eso trabajamos como la mano derecha de cada marca: hacemos crecer su valor, protegemos su rentabilidad y hacemos más con menos.",
+      svcH: "Servicios",
+      svc: [["Brand Managing","Marketing"],["CRM","Bitrix24"],["Planeamiento estratégico","Estrategias comerciales y de marca"],["Digital · New Media","Social media y tecnología"],["AV · Diseño · Creatividad","Producción gráfica y audiovisual"],["Investigación","Diseño, análisis y guía"],["Relaciones públicas","Diseño, entrenamiento y ejecución"],["Planeamiento de medios","Diseño y simulación"],["Media placing","Pauta digital y optimización"],["BTL & Entertainment","Eventos y experiencia"],["Omnicanalidad","Estructura, diseño, medición y guías"],["Analítica de consumo","Offline y online"]],
+      fh1: "Cobramos cuando usted vende.", fp1: "Parte de nuestra compensación es variable y depende de lo que su marca vende. No perseguimos premios de publicidad: perseguimos sus números, con un equipo que trabaja con KPIs.",
+      fh2: "Su mano derecha.", fp2: "Atendemos marcas de cualquier tamaño con servicio boutique: un equipo multidisciplinario que fija metas con usted, entiende su producto y construye sobre sus fortalezas.",
+      fh3: "Un solo CRM.", fp3: "Somos Bitrix24 Gold Partner. Implementamos y operamos el CRM que sigue cada oportunidad de negocio, para que marketing y ventas trabajen sobre la misma verdad.",
+      mh: "Así trabajamos.", mp: "Primero el proceso, después el talento. Nuestro método tiene cinco pilares y se ajusta trimestre a trimestre, para reaccionar a tiempo y corregir a favor de su marca.",
+      slip: [["Antes de empezar", [["Negocio","Metas y márgenes"],["Proceso de venta","Funnel medido"]]], ["Durante cada trimestre", [["Manejo de marca","Contacto 360°"],["Las personas","Talento y proceso"],["Ejecución","Online y offline"]]], ["Al cierre de cada Q", [["Revisión de KPIs","Ajuste a favor"]]]],
+      fin: ["Compradores listos para comprar", "Cada Q"],
+      pH: "Confían en nosotros.",
+      chH: "¿Su marca está lista?", chP: "Cuatro preguntas que hacemos antes de cualquier propuesta. Responda con honestidad.",
+      qs: ["¿Su plan de marketing tiene metas medibles por trimestre?", "¿Sabe cuántos de sus leads llegan listos para comprar?", "¿Marketing y ventas trabajan en el mismo CRM?", "¿Conoce el tamaño real de su mercado?"],
+      yes: "Sí", no: "No",
+      v0: "Responda las cuatro y le decimos por dónde empezar.",
+      v4: "Su marca tiene la base. Hablemos de cómo convertirla en más ventas.",
+      v2: "Hay trabajo por hacer, y ahí es donde más rendimos. ",
+      v1: "Este es justo el punto de partida de nuestro método. ",
+      talk: "Hablemos",
+      ctaS: "Cuéntenos de su marca. Le respondemos en menos de un día hábil.", word: "Hablemos",
+      coH: "Contacto", greet: "Escríbanos",
+      c1: "Oficinas", c1a: "Estados Unidos", c2: "Navegación", c3: "Producto", c4: "Contacto",
+      legal: "© 2026 LIFTBRAND. Todos los derechos reservados.", credit: "Fotografías de referencia: Unsplash vía Lorem Picsum.",
+      fdh: "Hablemos de su marca", fallback: "Si el formulario no carga, escríbanos a mercadeo@liftbrand.com o llámenos al +506 2215 0304.",
+      langBtn: "EN", langLabel: "Switch to English", close: "Cerrar", navLabel: "Principal"
+    },
+    en: {
+      skip: "Skip to content", hero: "Demand gen marketing for brands that want buyers who arrive ready to buy.", cta: "Assess your brand", menu: "Menu",
+      n1: "Services", n2: "Method", n3: "Clients", n4: "Contact", bl: "USA · Costa Rica", br: "Bitrix24 Gold Partner · Makers of Sales Machine",
+      aboutH: "About us", f1k: "Offices", f1v: "United States and Costa Rica", f2k: "Model", f2v: "Results-based compensation", f3k: "Partner", f4k: "Product",
+      about: "We believe in our word and in loyalty. We know business because we're part of it, which is why we work as each brand's right hand: we grow its value, protect its profitability and do more with less.",
+      svcH: "Services",
+      svc: [["Brand Managing","Marketing"],["CRM","Bitrix24"],["Strategic planning","Commercial and brand strategy"],["Digital · New Media","Social media and technology"],["AV · Design · Creative","Graphic and audiovisual production"],["Research","Design, analysis and guidance"],["Public relations","Design, training and execution"],["Media planning","Design and simulation"],["Media placing","Paid digital and optimization"],["BTL & Entertainment","Events and experience"],["Omnichannel","Structure, design, measurement and guides"],["Consumer analytics","Offline and online"]],
+      fh1: "We get paid when you sell.", fp1: "Part of our compensation is variable and depends on what your brand sells. We don't chase advertising awards: we chase your numbers, with a team that works on KPIs.",
+      fh2: "Your right hand.", fp2: "We serve brands of any size with boutique attention: a multidisciplinary team that sets goals with you, understands your product and builds on your strengths.",
+      fh3: "One CRM.", fp3: "We're a Bitrix24 Gold Partner. We implement and run the CRM that tracks every business opportunity, so marketing and sales work from the same truth.",
+      mh: "How we work.", mp: "Process first, then talent. Our method rests on five pillars and is adjusted quarter by quarter, so there's time to react and correct in your brand's favor.",
+      slip: [["Before we start", [["Business","Goals and margins"],["Sales process","Measured funnel"]]], ["Every quarter", [["Brand management","360° contact"],["People","Talent on process"],["Execution","Online and offline"]]], ["At each Q close", [["KPI review","Correct course"]]]],
+      fin: ["Buyers ready to buy", "Every Q"],
+      pH: "Brands that trust us.",
+      chH: "Is your brand ready?", chP: "Four questions we ask before any proposal. Answer honestly.",
+      qs: ["Does your marketing plan have measurable quarterly goals?", "Do you know how many of your leads arrive ready to buy?", "Do marketing and sales work in the same CRM?", "Do you know the real size of your market?"],
+      yes: "Yes", no: "No",
+      v0: "Answer all four and we'll tell you where to start.",
+      v4: "Your brand has the foundation. Let's talk about turning it into more sales.",
+      v2: "There's work to do, and that's where we perform best. ",
+      v1: "This is exactly where our method starts. ",
+      talk: "Let's talk",
+      ctaS: "Tell us about your brand. We reply within one business day.", word: "Contact",
+      coH: "Contact", greet: "Write to us",
+      c1: "Offices", c1a: "United States", c2: "Navigation", c3: "Product", c4: "Contact",
+      legal: "© 2026 LIFTBRAND. All rights reserved.", credit: "Reference photographs: Unsplash via Lorem Picsum.",
+      fdh: "Let's talk about your brand", fallback: "If the form doesn't load, write to mercadeo@liftbrand.com or call +506 2215 0304.",
+      langBtn: "ES", langLabel: "Cambiar a español", close: "Close", navLabel: "Main"
+    }
+  };
+
+  var lang = "es", answers = [null, null, null, null];
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var esc = function (s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
+  var nb = function (s) { return esc(s).replace(/ /g, "&nbsp;"); };
+
+  function render() {
+    var t = T[lang];
+    document.documentElement.lang = lang;
+    $$("[data-i18n]").forEach(function (el) { var k = el.getAttribute("data-i18n"); if (typeof t[k] === "string") el.textContent = t[k]; });
+    var lb = $("[data-lang-toggle]"); lb.textContent = t.langBtn; lb.setAttribute("aria-label", t.langLabel);
+    $(".x").setAttribute("aria-label", t.close); $(".nav").setAttribute("aria-label", t.navLabel);
+    $("[data-svc]").innerHTML = t.svc.map(function (s) { return "<li><b>" + esc(s[0]) + "</b><span>" + esc(s[1]) + "</span></li>"; }).join("");
+    $("[data-slip]").innerHTML = t.slip.map(function (g) {
+      return "<h3>" + esc(g[0]) + "</h3><ul>" + g[1].map(function (r) { return '<li><span class="l">' + esc(r[0]) + '</span><span class="dots" aria-hidden="true"></span><span class="r">' + esc(r[1]) + "</span></li>"; }).join("") + "</ul>";
+    }).join("") + '<p class="fin"><span>' + esc(t.fin[0]) + "</span><span>" + esc(t.fin[1]) + "</span></p>";
+    $("[data-questions]").innerHTML = t.qs.map(function (q, i) {
+      return '<li class="q"><p id="q' + i + '">' + esc(q) + '</p><div class="seg" role="group" aria-labelledby="q' + i + '">' +
+        '<button type="button" id="q' + i + 'y" data-q="' + i + '" data-v="1" aria-pressed="' + (answers[i] === 1) + '">' + t.yes + "</button>" +
+        '<button type="button" id="q' + i + 'n" data-q="' + i + '" data-v="0" aria-pressed="' + (answers[i] === 0) + '">' + t.no + "</button></div></li>";
+    }).join("");
+    score();
+  }
+
+  function score() {
+    var t = T[lang], done = answers.filter(function (a) { return a !== null; }).length, yes = answers.filter(function (a) { return a === 1; }).length;
+    $("[data-score]").textContent = yes + " / 4";
+    var v = $("[data-verdict]");
+    if (done < 4) { v.textContent = t.v0; return; }
+    if (yes === 4) { v.innerHTML = esc(t.v4) + ' <a href="#contacto" data-open-form>' + esc(t.talk) + "</a>"; return; }
+    v.innerHTML = esc(yes >= 2 ? t.v2 : t.v1) + '<a href="#contacto" data-open-form>' + esc(t.talk) + "</a>";
+  }
+
+  // Proof: one lit name moves through the list
+  var lit = 1;
+  function cycle() {
+    var nms = $$("[data-proof] .nm"); if (!nms.length) return;
+    nms[lit].classList.remove("on"); lit = (lit + 1) % nms.length; nms[lit].classList.add("on");
+  }
+
+  // Form dialog with the Bitrix24 inline form (same form as Sales Machine)
+  var dlg = $("#form-dlg"), b24Loaded = false;
+  function loadB24() {
+    if (b24Loaded) return; b24Loaded = true;
+    var s = document.createElement("script");
+    s.setAttribute("data-b24-form", B24.form); s.setAttribute("data-skip-moving", "true");
+    s.text = "(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'" + B24.loader + "');";
+    $("#b24-slot").appendChild(s);
+  }
+  function openForm(e) { if (e) e.preventDefault(); loadB24(); if (dlg.showModal) { dlg.showModal(); } else { location.hash = "contacto"; } }
+
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest ? e.target : null; if (!t) return;
+    var q = t.closest("[data-q]");
+    if (q) { answers[+q.getAttribute("data-q")] = +q.getAttribute("data-v"); $$('[data-q="' + q.getAttribute("data-q") + '"]').forEach(function (b) { b.setAttribute("aria-pressed", String(b === q)); }); score(); return; }
+    if (t.closest("[data-open-form]")) { openForm(e); return; }
+    if (t.closest("[data-close-form]")) { dlg.close(); return; }
+    if (t.closest("[data-lang-toggle]")) { lang = lang === "es" ? "en" : "es"; render(); try { localStorage.setItem("lb-lang", lang); } catch (_) {} return; }
+    if (t.closest(".menu-btn")) { var ul = $("#navlist"), b = $(".menu-btn"), open = !ul.classList.contains("open"); ul.classList.toggle("open", open); b.setAttribute("aria-expanded", String(open)); return; }
+    if (t.closest("#navlist a")) { $("#navlist").classList.remove("open"); $(".menu-btn").setAttribute("aria-expanded", "false"); }
+  });
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+
+  // Entrances: only for what starts below the first screen
+  function reveal() {
+    document.documentElement.classList.add("js");
+    if (!("IntersectionObserver" in window)) return;
+    var groups = {};
+    $$("[data-reveal]").forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.9) return;
+      var sec = el.closest("section, .wrap") || document.body, key = sec.id || sec.className;
+      groups[key] = (groups[key] || 0); el.style.setProperty("--i", groups[key]++);
+      el.classList.add("pre", "rv");
+    });
+    var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.remove("pre"); io.unobserve(en.target); } }); }, { rootMargin: "0px 0px -10% 0px" });
+    $$(".pre").forEach(function (el) { io.observe(el); });
+  }
+
+  try { var saved = localStorage.getItem("lb-lang"); if (saved === "en" || saved === "es") lang = saved; } catch (_) {}
+  // Fit the monumental words to the content box by measurement
+  function fit() {
+    $$(".wordmark > span, .foot-word > span, .cta-word > span").forEach(function (sp) {
+      var box = sp.parentElement, cs = getComputedStyle(box);
+      var target = box.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      if (box.classList.contains("cta-word")) target = box.parentElement.clientWidth - parseFloat(getComputedStyle(box.parentElement).paddingLeft) - parseFloat(getComputedStyle(box.parentElement).paddingRight);
+      box.style.fontSize = "100px";
+      var w = sp.getBoundingClientRect().width; if (w > 0) box.style.fontSize = (100 * target / (w + 7)).toFixed(2) + "px";
+    });
+  }
+  render();
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  window.addEventListener("resize", fit);
+  reveal();
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(cycle, 2000);
+})();
+</script>
+</body>
+</html>
